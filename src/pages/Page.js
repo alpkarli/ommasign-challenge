@@ -6,7 +6,6 @@ export default class Page {
 	animate() {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
-				console.log("Animation Finished");
 				resolve(true);
 			}, this.duration);
 		});

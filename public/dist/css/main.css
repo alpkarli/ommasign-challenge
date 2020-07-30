@@ -1,9 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
     overflow: hidden;
 }
 
 .container {
+    height: 100%;
     align-self: center;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
 }
+
+hr {
+    border-color: #1b1b1b;
+}
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed rgb(247, 199, 43);
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted rgb(247, 199, 43);
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #1b1b1b;
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid rgb(247, 199, 43);
+    border-radius: 5px;
+}
+
+.transition-container {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 110px;
+    background-color: #e67737;
+}
+
+.container-top {
+    padding: 60px;
+    height: 56%;
+}
+
+.container-red {
+    background-color: #cf2519;
+}
+
+.container-blue {
+    background-color: #1977cf;
+}
+
+.container-bottom {
+    height: 44%;
+    background-color: burlywood;
+}
+
+.content-container {
+    margin-top: 60px;
+    color: burlywood;
+}
+
+.product-text {
+    font-size: x-large;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.img-container {
+    height: 350px;
+    width: 350px;
+}
+
+.text-container-20 {
+    font-weight: bold;
+    font-size: x-large;
+    margin: auto;
+    width: 20%;
+}
+
+.text-container-60 {
+    font-weight: bold;
+    font-size: x-large;
+    margin: auto;
+    width: 60%;
+}
+
+.drink-container {
+    margin: 40px;
+}
+
+.mid-container {
+    margin-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.mid-container--justifiy-center {
+    font-family: cursive;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.mid-container--justifiy-space {
+    justify-content: space-evenly;
+}
+
+.drink-text {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.prices-container {
+    font-size: xx-large;
+    margin: auto 0;
+}
+
+.price-container {
+    border-radius: 50px;
+    background: #202020;
+    padding: 6px;
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.gram-container-m {
+    transform: rotate(-15deg);
+    display: block;
+    color: #1b1b1b;
+    background-color: #11bf54;
+}
+
+.gram-container-l {
+    transform: rotate(-15deg);
+    display: block;
+    color: #1b1b1b;
+    background-color: #1165bf;
+}
+
+.price-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+}
+
+.flex-container {
+    background-color: rgb(170, 72, 235);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.flex-content-container-top {
+    height: 80%;
+    color: #1b1b1b;
+}
+
+.flex-content-container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: rgb(247, 199, 43);
+    color: rgb(36, 36, 36);
+    font-size: xxx-large;
+    font-weight: bold;
+
+}
+
+.row-container {
+    display: block;
+    border: 2px solid rgb(37, 37, 37);
+    width: 100%;
+    background-color: rgb(170, 72, 235);
+}
+

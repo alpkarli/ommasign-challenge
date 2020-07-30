@@ -20,11 +20,10 @@ const pageNumber = 3;
 
 setTimeout(() => {
 	changePage();
-}, 2000);
+}, 0);
 
 const changePage = () => {
 	let pathName = `/${currentPage}`;
-	console.log(routes[pathName]);
 	onNavigate(pathName);
 	waitAnim(pathName).then(() => {
 		changePageNum();
@@ -47,7 +46,6 @@ const checkTransition = (pathName) => {
 
 const withTransition = () => {
 	let transitionPath = '/Transition';
-	console.log(routes[transitionPath]);
 	setTimeout(() => {
 		changePage();
 	}, routes[transitionPath].duration);
